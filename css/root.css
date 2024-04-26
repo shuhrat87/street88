@@ -1,0 +1,15 @@
+/* colors */
+:root{
+    --primary-color:rgba(12, 12, 12, 1);
+    --secondary-color:rgba(57, 54, 54, 1);
+    --title-primary-color:rgba(105, 207, 23, 1);
+    --txt-primary-color:rgba(255, 255, 255, 1);
+}
+/* colors */
+
+/* fonts */
+:root{
+    --primary-font:"Raleway";
+    --secondary-font:"Roboto";
+}
+/* fonts */

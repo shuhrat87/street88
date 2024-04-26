@@ -1,0 +1,31 @@
+.nav{
+    background:var( --primary-color) ;
+    padding: 18px 0 ;
+}
+.nav > .container{
+    display: flex;
+    justify-content: space-between;
+}
+.navvector{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 16px;
+    font-family:var(--secondary-font) ;
+    color: #fff;
+    font-weight: 400px;
+}
+.nav__list{
+    display: flex;
+    gap: 20px;
+}
+.nav__link{
+    font-size: 16px;
+    font-family:var(--secondary-font) ;
+    color: #fff;
+    transition: 0.4s;
+}
+.nav__link:hover{
+    background:rgba(105, 207, 23, 0.75) ;
+    padding: 22px 10px;
+}
