@@ -1,9 +1,9 @@
 .header {
     background: #000;
-   
+  padding-bottom: 50px;
 }
 
-.header__line>.container {
+.header__line >.container {
     display: flex;
     justify-content: space-between;
     padding: 6px 0;
@@ -36,7 +36,54 @@
     padding: 22px 10px;
 }
 .header__bg{
-    background: url()no-repeat center center / cover;
+    background: url(../../img/navandheader/headerbg.png)no-repeat center center / cover;
     max-width: 100%;
     min-height: 600px;
+}
+.header__bg >.container{
+    display: flex;
+    flex-direction: column;
+    padding-top:150px ;
+}
+.header__bg-title{
+    font-size: 72px;
+    color: var(--title-primary-color);
+    font-family: var(--primary-font);
+    font-weight: 900;
+}
+.header__bg-subtitle{
+    font-size: 36px;
+    color: var(--title-primary-color);
+    font-family: var(--primary-font);
+}
+.header__bg-txt{
+    font-size: 18px;
+    font-family: var(--primary-font);
+    color:var(--txt-primary-color) ;
+    padding-top: 18px;
+}
+.header__bg-box{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: center;
+}
+.header__bg-price{
+    max-width: 285px;
+    font-size: 50px;
+    font-family: var(--primary-font);
+    font-weight: 100;
+    color:var(--txt-primary-color) ;
+    background:rgba(105, 207, 23, 0.5);
+    padding: 32px 76px;
+}
+.header__bg-btn{
+    max-width: 255px;
+    font-size: 18px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    color:var(--txt-primary-color) ;
+    background:linear-gradient(45deg,rgba(105, 207, 23, 1),rgba(65, 125, 17, 1));
+    padding: 15px 70px;
+    border-radius: 6px;
 }
