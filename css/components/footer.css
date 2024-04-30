@@ -18,7 +18,7 @@
 
 .footer__box a {
     font-size: 20px;
-    font-family: "Roboto";
+    font-family: var(--secondary-font);
     color: var(--txt-primary-color);
   
 }
@@ -40,7 +40,13 @@
     color: var(--txt-primary-color);
     font-size: 20px;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: var( --secondary-font);
+    transition: 0.4s;
+}
+.footer__link:hover{
+    display: inline-block;
+    transform: translateY(5px);
+    
 }
 
 .footer__last-box {
@@ -54,5 +60,5 @@
     color: var(--txt-primary-color);
     font-size: 16px;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: var( --secondary-font);
 }

@@ -1,4 +1,4 @@
-
+/* header nav2 */
 .header__line >.container {
     display: flex;
     justify-content: space-between;
@@ -34,6 +34,7 @@
 .header__nav-link:hover{
     background:rgba(105, 207, 23, 0.75) ;
 }
+/* header nav2 */
 .header{
     background: url(../../img/navandheader/headerbg.png)no-repeat center center / cover;
     max-width: 100%;
@@ -42,7 +43,7 @@
     align-items: center;
     justify-content: center;
 }
-.header__bg >.container{
+.header >.container{
     display: flex;
     flex-direction: column;
     padding-top:150px ;
@@ -85,7 +86,16 @@
     padding: 15px 70px;
     border-radius: 6px;
     transition: 0.4s;
+   
 }
 .header__bg-btn:hover {
- 
+ display: inline-block;
+ transform: translateY(5px);
+}
+
+
+.nav__menu{
+    @media(width < 768px){
+       position: absolute; 
+    }
 }
