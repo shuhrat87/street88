@@ -1,8 +1,13 @@
 .burger{
     display: flex;
     flex-direction: column;
+    background: #000;
+    padding: 50px 0;
+    
 }
+
 .burger__list{
+    width: 100%;
     display: flex;
     padding:20px 0 ;
     gap: 30px;
@@ -19,14 +24,15 @@
 }
 .burger__link:hover{
     border-bottom:1px solid var(--txt-primary-color);
-   
     width: max-content;
+    color: var(--title-primary-color);
 }
 .burger__cards{
     background:var(--secondary-color) ;
     display: grid;
     grid-template-columns:repeat(4,1fr) ;
-    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+    padding: 15px;
 }
 .burger__card{
     display: flex;
@@ -35,28 +41,52 @@
     border: 1px solid var(--txt-primary-color);
     border-radius: 1px;
     padding: 15px 16px;
-    max-width: 370px;
-    width: 100%;
     background: var( --primary-color);
-    margin: 15px 30px 30px 15px;
 }
-.burger__card img{
-    max-width: 338px;
+.burger__card-img{
     transition: 0.4s;
-   
+    width: 100%;
+  
 }
-.burger__card img:hover{
-    background: rgba(105, 207, 23, 0.9);
+.burger__box{
+    position: relative;
+    transition: 0.6s;
+    
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background:rgba(105, 207, 23, 0.9) ;
+        z-index: 2;
+        position: absolute;
+        opacity: 0;
+    }
+    &:hover::before{
+        opacity: 1;
+    }
+    &:hover .burger__card-korz{
+        opacity: 1;
+    }
 }
+
+.burger__card-korz{
+    position: absolute;
+    top: 36%;
+    left: 36%;
+    z-index: 3;
+    opacity: 0;
+}
+
+
 .burger__card-title{
     font-size:19px ;
-    font-family:var(--primary-font) ;
     font-weight: 700;
     color: var(--txt-primary-color);
+    transition: 0.4s;
 }
+
 .burger__card-txt{
     font-size:19px ;
-    font-family:var(--primary-font) ;
     font-weight: 400;
     color: var(--txt-primary-color);
     line-height: 25px;
