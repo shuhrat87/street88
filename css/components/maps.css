@@ -1,0 +1,7 @@
+.maps-title{
+    font-size:50px ;
+    color: var(--title-primary-color);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
