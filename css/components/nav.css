@@ -18,7 +18,6 @@
     font-size: 16px;
     font-family:var(--secondary-font) ;
     color: #fff;
-    font-weight: 400px;
 }
 .nav__list{
     display: flex;
@@ -28,6 +27,7 @@
     @media(width < 768px){
         flex-direction: column;
         align-items: center;
+        gap: unset;
     }
 }
 .nav__link{
@@ -37,6 +37,11 @@
     transition: 0.4s;
     display: inline-block;
     padding: 22px 10px;
+    
+    
+    @media(width < 768px){
+       padding: 10px;
+    }
 }
 .nav__link:hover{
     background:rgba(105, 207, 23, 0.75) ;
