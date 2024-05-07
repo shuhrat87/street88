@@ -11,15 +11,15 @@
 }
 
 .about__box {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1110px;
-    min-height: 400px;
-    background: no-repeat url(../../img/navandheader/photo_cropped\ 1.png ) center/cover;
 }
 
 .about__title {
+    position: absolute;
     color: var(--title-primary-color);
     font-size: clamp(25px, 5vw, 55px);
     font-family: var(--primary-font);
@@ -27,15 +27,6 @@
     text-transform: uppercase;
     line-height: 64px;
 
-    @media(width < 460px) {
-        top: 33%;
-        left: 33%;
-    }
-
-    @media(width < 380px) {
-        top: 26%;
-        left: 28%;
-    }
 }
 
 .about__txt {
